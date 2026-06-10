@@ -71,7 +71,7 @@ Now we can access our Open WebUI instance at the following address: `http://<YOU
 
 {: .action}
 > 1. Access your Open WebUI instance at `http://<YOURIP>:3000`, and set up your login details. 
-> 2. Now you can try to load a model from [Ollama](https://ollama.com/search), by clicking on the model selection button, entering the name, and choosing _Pull from Ollama.com_. Given that you currently have no access to GPUs, a CPU-only model you can choose is `steamdj/llama3.1-cpu-only`.
+> 2. Now you can try to load a model from [Ollama](https://ollama.com/search), by clicking on the model selection button, entering the name, and choosing _Pull from Ollama.com_. Given that you currently have no access to GPUs, a CPU-only model you can choose is `phi4-mini`.
 > Congrats! You have now set up your very own LLM interface! Take some time to look around and explore the possibilities.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/BctkLsN7jU8?si=6vXQJzX3j_N-m-lW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

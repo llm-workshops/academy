@@ -1,7 +1,7 @@
 ---
 title: "Additional Exercises"
 parent: "Augmenting LLM Capabilities"
-nav_order: 3
+nav_order: 2
 ---
 
 ## Additional exercises

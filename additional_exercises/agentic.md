@@ -1,6 +1,6 @@
 ---
 title: "Agentic Workflows"
-parent: "Augmenting LLM Capabilities"
+parent: "Additional Exercises"
 nav_order: 2
 ---
 
