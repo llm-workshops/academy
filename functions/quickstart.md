@@ -178,6 +178,6 @@ The filter above is a toy example intended to demonstrate the mechanics of Open 
 Try experimenting with the filter to find its blind spots. Can you get sensitive information past it by changing formatting or spacing? What types of personal data does it completely ignore? Thinking adversarially about filters like this is an important skill. How would you improve upon this first version?
 
 ## What is next?
-Now that you understand the basics of functions, we can move onto a more complex setting: **agentic frameworks**. In the [next section](agentic.md), you will set up an agentic framework for secure coding with LLMs.
+If you are done early, you can have a look at the [additional exercises](additional_exercises.md).
 
 _Author: [Alexander Sternfeld](https://ch.linkedin.com/in/alexander-sternfeld-93a01799)_

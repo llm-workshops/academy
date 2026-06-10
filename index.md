@@ -14,7 +14,7 @@ Reliable Information Lab, HES-SO Valais-Wallis
 ## Agenda
 
 * 09.00 - 09.20: Introduction 
-* 09.20 - 09.45: [Setting up our own Open WebUI](technical_installation/server.md)
+* 09.20 - 09.45: [Setting up our own Open WebUI](technical_installation/server_cpuonly.md)
 * 09.45 - 10.45: [Open WebUI Functions and Tool Calling](functions/quickstart.md)
 * 10.45 - 11.00: Concluding remarks
 
