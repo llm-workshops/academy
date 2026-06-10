@@ -131,17 +131,18 @@ Executing the python file would block your terminal, not allowing you to do anyt
 Next, we will connect our tool server to Open WebUI. Follow the steps below to achieve this, also see the image below for further context.
 
 {: .action}
-> 1. In Open WebUI, go to `Admin panel -> Settings -> External Tools -> + icon next to Manage Tool Servers` 
+> 1. In Open WebUI, go to `Admin panel -> Settings ->Integrations -> Manage Tool Servers -> + icon next to Manage Tool Servers` 
 > 2. Fill in the fields as follows:
+>     * **Name**: Tools
+>     * **Id**: `tools`
 >     * **Type**: MCP
 >     * **URL**: `http://<YOURIP>:8000/mcp` (replace `<YOURIP>` with your server's IP address)
 >     * **Auth**: None
->     * **Headers**: `{"Accept": "application/json, text/event-stream", "Content-Type": "application/json"}`
->     * **ID**: `tools`
+>     * **Headers (under Advanced)**: `{"Accept": "application/json, text/event-stream", "Content-Type": "application/json"}`
 >     * **Name/Description**: Here you can give the tool server a name and a description
 >     * **Function Name Filter List**: Here we enter the function names, in our case: `count_by_first_name, count_by_job_keyword`
 
-![](../assets/mcp_settings.png)
+![](../assets/mcp.png)
 
 ## Using the tool in Open WebUI
 Once we configured the tool correctly in the admin settings, we can start to use it in the chat. In the box where you enter the prompt, click on the icon _integrations_, and toggle on your MCP in the tools section. Below are a few prompts you can try out, but feel free to give them your own spin and test the limits of the LLM!

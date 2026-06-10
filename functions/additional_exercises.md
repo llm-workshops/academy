@@ -5,15 +5,12 @@ nav_order: 2
 ---
 
 ## Additional exercises
-In the previous sections, you learned how to:
-- Use **filter functions** to intercept and modify user input and model output
-- Build **pipe functions** to construct agentic workflows with multiple LLM calls
+In the previous sections, you learned how to use a **filter function** to intercept and modify user input and model output
 
-We now provide you with several different exercises to deepen your understanding and explore different applications. There is most likely insufficient time to do all exercises, hence we recommend you to choose the one that seems most interesting to you. Whereas exercises 1 is more guided, exercise 2 is more open-ended.
+We now provide you with two different exercises to deepen your understanding and explore different applications. There is most likely insufficient time to do both exercises, hence we recommend you to choose the one that seems most interesting to you. Whereas exercises 1 is more guided, exercise 2 is more open-ended.
 
 1. [Exploring **action functions**](#exercise-1-building-an-action-function)
 2. [Using **valves** as user-configurable controls](#exercise-2-adding-valves-to-your-filters)
-3. [Extending the agentic coding pipeline with a code patching step.](exercise-3-extending-the-safecoder-agentic-pipeline)
 
 ## Exercise 1: Building an Action Function
 [Action Functions](https://docs.openwebui.com/features/plugin/functions/action/) will appear as clickable buttons below the generated response from the LLM. Whereas filter functions automatically execute operations on the input prompt or generated response, action functions need to be manually triggered by a user by clicking on the button below the response from the LLM. Several examples of action functions are:
@@ -490,7 +487,7 @@ After you have explored the base functionalities of the summarization function, 
 
 ## Exercise 2: Adding Valves to Your Filters
 
-In [Part 1](quickstart_function.md), the PPI filter always redacted detected sensitive information. In practice, you may want to provide users with more control on the behavior of the filter. You can achieve this using **valves**, settings that the user can manage.
+In [Part 1](quickstart.md), the PPI filter always redacted detected sensitive information. In practice, you may want to provide users with more control on the behavior of the filter. You can achieve this using **valves**, settings that the user can manage.
 
 ### Goal
 Extend the PPI filter with one or more **valves**, such as:
@@ -504,12 +501,5 @@ Extend the PPI filter with one or more **valves**, such as:
 
 {: .tip}
 > For examples on how to include valves into your function, have a look at some community examples of functions, available [here](https://openwebui.com/?sort=hot). For instance, [this function](https://openwebui.com/posts/65a2ea8f-2a13-4587-9d76-55eea0035cc8) for generating flash cards, or [this function](https://openwebui.com/posts/93efd285-0cd2-4f44-84a1-cf7596bc7bf2) that bypasses model refusals. 
-
-## Exercise 3: Extending the SafeCoder Agentic Pipeline
-The third exercise extends the SafeCoder pipeline we worked on in [part 2](agentic.md). In the setting in part 2, we have two LLMs: the first one generates the code, and the second LLM evaluates the code for safety. In this exercise, we add a third stage, in which the initial code is improved based on the insecurities detected before. This approach is a slight simplification of [TypePilot](https://arxiv.org/pdf/2510.11151), a work in which such an agentic framework is used to improve code generation for strongly typed coding languages. 
-
-{: .tip}
-> Starting from the code in [part 2](agentic.md), you will have to add two things: a function creating the prompt for the new stage, and an addition of the stage in the `pipe` function. Based on the first two stages in the `pipe` function, you can see how to add the third stage in the function. As before, you can debug by using the `logging` module in Python and subsequently inspecting the logs in the docker container. 
-
 
 _Author: [Alexander Sternfeld](https://ch.linkedin.com/in/alexander-sternfeld-93a01799)_
